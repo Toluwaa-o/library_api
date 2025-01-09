@@ -35,7 +35,7 @@ app.use(cookieParser(process.env.JWT_SECRET)) // Parse and sign cookies using th
 app.use(morgan('tiny')) // Log HTTP requests in a concise format
 
 // Route handling
-app.get('/', (req, res) => res.sendFile('/index.html'))
+app.get('/', (req, res) => res.render('/index.html'))
 app.use('/auth', authRouter) // Routes for authentication (e.g., login, signup)
 app.use('/books', auth, bookRouter) // Protected routes for books (requires authentication)
 
