@@ -39,6 +39,9 @@ This is a Node.js RESTful API for managing a collection of books. It supports us
 ---
 
 ### **Usage**  
+1. Use the api: [library-api-qwuc.onrender.com](https://library-api-qwuc.onrender.com)
+
+### ***OR***
 
 1. Clone the repository:  
    ```bash
