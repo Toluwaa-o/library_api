@@ -30,7 +30,7 @@ const { auth } = require('./middleware/authentication'); // Middleware for user 
 
 // General middleware invocation
 app.use(express.json()) // Parse incoming JSON requests
-app.use(express.static('./Public')) // Serve static files from the "Public" directory
+app.use(express.static('./public')) // Serve static files from the "Public" directory
 app.use(cookieParser(process.env.JWT_SECRET)) // Parse and sign cookies using the JWT secret
 app.use(morgan('tiny')) // Log HTTP requests in a concise format
 
